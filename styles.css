@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:400,500,700');
+
+*, *::before, *::after {
+    box-sizing: border-box; /* make heights and widsth easier to deal with */
+}
+/* Backgriung color for our body*/
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #F2F5FF;
+}
