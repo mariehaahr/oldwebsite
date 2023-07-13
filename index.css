@@ -1,0 +1,17 @@
+/* styles for the index page only */ 
+.home-main-section {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-grow: 1;
+    align-items: center;
+
+}
+
+.home-main-section .call-to-action {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1rem;
+    align-self: center;
+}
