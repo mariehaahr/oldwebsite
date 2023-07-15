@@ -11,7 +11,7 @@ body {
     margin: 0;
     background-color: #F2F5FF;
     font-family: Montserrat, sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     min-height: 100vh;
 }
 
@@ -24,7 +24,7 @@ body {
 .brand-logo {
     display: flex; /* such that out items will be right next to each other*/
     align-items: center; /* so the text is perfectly centered to the logo*/
-    font-size: 1.25em;
+    font-size: 1.8em;
     text-decoration: none;
     color: inherit;
 }
@@ -32,41 +32,93 @@ body {
 .brand-logo-name{
     margin-left: 1rem; 
 }
-.main-nav ul {
+
+
+.main-nav ul, .footer-nav ul {
     display: flex;
     margin: 0;
     padding: 0; 
     list-style: none;
 }
 
-.main-nav a {
+.main-nav a, .footer-nav a {
     color: inherit;
     text-decoration: none;
     padding: 1rem;
 }
 
-.main-nav a:hover {
+.main-nav a:hover, .footer-nav a:hover {
     color: #adadad 
 }
 
-.main-header {
+.main-header, .main-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 140px; 
+}
+
+.main-header {
+    position: fixed;
+    top: 0px;
+    left: 80px;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: slategray; /* Set the desired background color */
+    z-index: 100; /* Ensure the header appears above other elements */
+}
+
+.main-footer, .container, .social-link {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    align-items: center;
+}
+
+.main-footer {
+    height: 70px;
+    background-color: slategray;
+    font-weight: bold;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100; /* Ensure the footer appears above other elements */
+}
+
+.social-link {
+    width: 1em;
+    margin-right: .25rem;
+}
+
+.call-to-action{
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 140px 40px 70px; /* Adjust the padding values to create space for header and footer */
+    flex-grow: 1;
+    margin-top: 140px;
 }
 
 .container {
+    display: flex;
     max-width: 1200px;
     margin: 0 auto; /* 0 for top and bottom and auto on the left and right- centers everything*/
     padding: 0 40px;
+    flex-grow: 1;
 }
+
+
 
 .title {
     font-weight: 500;
-    font-size: 3em;
+    font-size: 2em;
     margin-bottom: 1rem;
     margin-top: 0;
+    align-items: flex-start;
 }
 
 .subtitle {
@@ -93,3 +145,66 @@ body {
     text-decoration: none;
     font-size: .9rem;
 }
+
+
+.icon-section {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* .icon {
+    display: felx;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: .5rem;
+    padding: .75rem;
+    background-color: lightgray;
+    text-align: center;
+} */
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5rem;
+    text-align: center;
+    background-color: lightgray;
+    height: 335px;
+    width: 335px;
+  }
+  
+  .icon a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .icon img {
+    width: 335px; /* Adjust the size as needed */
+    height: 335px;
+    object-fit: cover;
+
+  }
+  
+  .icon-label {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+
+  }
+
+  .icon:hover {
+    transform: scale(1.1);
+  }
+
+  .sub-main-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-grow: 1;
+
+}
+

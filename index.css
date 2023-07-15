@@ -2,10 +2,16 @@
 .home-main-section {
     display: flex;
     align-items: stretch;
-    justify-content: center;
+    justify-content: space-between;
     flex-grow: 1;
-    align-items: center;
+}
 
+.home-main-section {
+    flex-grow: 1;
+    flex-direction: column;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
 }
 
 .home-main-section .call-to-action {
@@ -13,5 +19,6 @@
     flex-direction: column;
     align-items: flex-start;
     margin: 1rem;
-    align-self: center;
-}
+
+} 
+
