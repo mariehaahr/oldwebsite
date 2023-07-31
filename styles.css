@@ -1,16 +1,26 @@
 /* styles shared across all pages*/
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:400,500,700');
+
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Montserrat:wght@300&display=swap');;
 
 *, *::before, *::after {
     box-sizing: border-box; /* make heights and widsth easier to deal with */
 }
+
+
+/* Example of media query for mobile devices */
+@media (max-width: 767px) {
+    /* CSS styles for mobile devices */
+  }
+
 /* Backgriung color for our body*/
 body {
     padding: 0;
     margin: 0;
     background-color: #F2F5FF;
-    font-family: Montserrat, sans-serif;
+    /*font-family: Montserrat, sans-serif;*/
+    font-family: 'Arimo', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.1rem;
     min-height: 100vh;
 }
@@ -55,6 +65,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    backdrop-filter: blur(2px);
 }
 
 .main-header {
@@ -64,9 +75,9 @@ body {
     height: 80px;
     position: fixed;
     top: 0;
-    left: 0;
+    left: 1;
     right: 0;
-    background-color: slategray; /* Set the desired background color */
+    background-color: rgba(242, 245, 255, 0.9) ;/* Set the desired background color */
     z-index: 100; /* Ensure the header appears above other elements */
 }
 
@@ -79,13 +90,14 @@ body {
 
 .main-footer {
     height: 70px;
-    background-color: slategray;
+    background-color: rgba(242, 245, 255, 0.9);
     font-weight: bold;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
     z-index: 100; /* Ensure the footer appears above other elements */
+
 }
 
 .social-link {
@@ -98,9 +110,10 @@ body {
     flex-direction: column;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 140px 40px 70px; /* Adjust the padding values to create space for header and footer */
+    padding: 50px 70px 10px; /* Adjust the padding values to create space for header and footer */
     flex-grow: 1;
-    margin-top: 140px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .container {
@@ -109,6 +122,9 @@ body {
     margin: 0 auto; /* 0 for top and bottom and auto on the left and right- centers everything*/
     padding: 0 40px;
     flex-grow: 1;
+    margin-top: 10px;
+    margin-bottom: 12px;
+
 }
 
 
@@ -197,14 +213,26 @@ body {
   }
 
   .icon:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
+    /*color: #adadad; */
+    background-color: #adadad;
   }
 
   .sub-main-section {
-    display: flex;
+    display: block;
     align-items: flex-start;
     justify-content: space-between;
     flex-grow: 1;
+    margin-bottom: 40px;
+    margin-top: 5px;
 
 }
 
+.website-wrapper {
+    opacity: 0; /* Start with an opacity of 0 (fully transparent) */
+    transition: opacity 1s ease; /* Add a transition for the opacity property with 1-second duration */
+}
+
+.website-wrapper.visible {
+    opacity: 1; /* Change the opacity to 1 (fully opaque) when the 'visible' class is added */
+}
