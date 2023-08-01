@@ -9,21 +9,21 @@
     <title>NA | mariehaahrnotes</title>
 </head>
 <body class="full-height-grow"> <!-- for at få plads i begge sider af hjemmesiden (margin agtig)-->
-    <header class="main-header"> 
-        <div class="container">
-            <a href="index.html" class="brand-logo">  <!-- Laver en klasse til logo, så den kan acesses i CSS-->
-                 <div class="brand-logo-name"> mariehaahrnotes</div>
-             </a>
-            <nav class="main-nav">
-            <nav> <!-- nav element, baren i toppen som kan navigere et andet sted hen-->
-                <ul> <!-- Unordered list-->
-                    <li> <a href="na.html"> Network Analysis</a></li>
-                    <li> <a href="ml.html"> Machine Learning</a></li>
-
-                </ul>
-            </nav>
+    <div class="website-wrapper">
+        <header class="main-header"> 
+            <div class="container">
+                <a href="index.html" class="brand-logo">  <!-- Laver en klasse til logo, så den kan acesses i CSS-->
+                    <div class="brand-logo-name"> mariehaahrnotes</div>
+                </a>
+                <nav class="main-nav">
+                <nav> <!-- nav element, baren i toppen som kan navigere et andet sted hen-->
+                    <ul> <!-- Unordered list-->
+                        <li> <a href="na.html"> Network Analysis</a></li>
+                        <li> <a href="ml.html"> Machine Learning</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
-        </div>
         <section class="sub-main-section">
             <div class="container">
                 <div class="call-to-action">
@@ -32,7 +32,7 @@
                         <div>write something here for the subtitle</div>
                             <div class="icon-section">
                                 <div class="icon">
-                                    <a href="testpage.html">
+                                    <a href="otherpages/testpage.html">
                                         <img src="images/linear-regression.png" alt="Icon 1">
                                         <span class="icon-label">Linear Regression</span>
                                     </a>
@@ -74,25 +74,34 @@
                         </ul>
                     </div>
                 </div>
-        </section>
-    </div>
-    <footer class="main-footer"> 
-        <div class="container">
-            <nav class="footer-nav"> 
-                <ul>
-                    <li> <a href="about.html"> About </a></li>
-                    <li> <a href="learnmore.html"> Learn More </a></li>
-                </ul>
-            </nav>
-            <nav class="footer-nav"> 
-                <ul>
-                    <li> 
-                        <a href="https://www.linkedin.com/in/marie-haahr/" class="social-link">
-                            <img src="images/linkedin2.png" height="30" width="30">
-                            Linkedin
-                        </a>
-                    </li>
-            </nav>
+            </section>
         </div>
-    </footer>
+        <footer class="main-footer"> 
+            <div class="container">
+                <nav class="footer-nav"> 
+                    <ul>
+                        <li> <a href="otherpages/about.html"> About </a></li>
+                        <li> <a href="learnmore.html"> Learn More </a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-nav"> 
+                    <ul>
+                        <li> 
+                            <a href="https://www.linkedin.com/in/marie-haahr/" class="social-link">
+                                <img src="images/linkedin2.png" height="30" width="30">
+                                Linkedin
+                            </a>
+                        </li>
+                </nav>
+            </div>
+        </footer>
+    </div>
+    <script>
+        // JavaScript to add the 'visible' class after the website has loaded
+        document.addEventListener("DOMContentLoaded", function () {
+            var pageWrapper = document.querySelector(".website-wrapper");
+            pageWrapper.classList.add("visible");
+        });
+    </script>
+</body>
 </html>

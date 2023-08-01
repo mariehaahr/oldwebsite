@@ -120,10 +120,12 @@ body {
     display: flex;
     max-width: 1200px;
     margin: 0 auto; /* 0 for top and bottom and auto on the left and right- centers everything*/
-    padding: 0 30px;
+    /*padding: 0 30px;*/
     flex-grow: 1;
     margin-top: 20px;
     margin-bottom: 12px;
+    padding-left: 20px;
+    padding-right: 50px;
 
 }
 
@@ -147,7 +149,11 @@ body {
 .blog-text {
     align-items: flex-start;
     margin-top: 70px;
+    margin-bottom: 70px;
     margin-left: 55px;
+    display: flex;
+    flex-direction: column;
+    float: left;
 }
 
 .na-btn {
@@ -235,10 +241,22 @@ body {
 }
 
 .website-wrapper {
-    opacity: 0; /* Start with an opacity of 0 (fully transparent) */
-    transition: opacity 1s ease; /* Add a transition for the opacity property with 1-second duration */
+    opacity: 0; /* opacity of 0 (fully transparent) */
+    transition: opacity 1s ease; /* 1 second duration*/
 }
 
 .website-wrapper.visible {
-    opacity: 1; /* Change the opacity to 1 (fully opaque) when the 'visible' class is added */
+    opacity: 1; 
+}
+
+.center-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+}
+
+.right-image {
+    clear: right;
+    float: right;
 }
