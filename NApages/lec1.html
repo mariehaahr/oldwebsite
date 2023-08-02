@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../styles.css" rel="stylesheet">
+    <title>Lecture 1 NA | mariehaahrnotes</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</head>
+    <body class="full-height-grow"> <!-- for at få plads i begge sider af hjemmesiden (margin agtig)-->
+        <header class="main-header"> 
+            <div class="container">
+                <a href="../index.html" class="brand-logo">  <!-- Laver en klasse til logo, så den kan acesses i CSS-->
+                    <div class="brand-logo-name"> mariehaahrnotes</div>
+                </a>
+                <nav class="main-nav">
+                <nav> <!-- nav element, baren i toppen som kan navigere et andet sted hen-->
+                    <ul> <!-- Unordered list-->
+                        <li> <a href="../na.html"> Network Analysis</a></li>
+                        <li> <a href="../ml.html"> Machine Learning</a></li>
+
+                    </ul>
+                </nav>
+            </header>
+            </div>
+                <div class="website-wrapper"> 
+                    <div class="container">
+                        <div class="blog-text">
+                            <div class="title"> Lecture 1 - Graph basics, hypergraphs, dynamic graphs</div>
+                            <div class="small-title"> 3 - Basic Graphs </div>
+                            <div> Edge weights can be interpreted in two opposite ways, depending on what the network is representing. 
+                                They can be considered the proximity between the two nodes or their distance.</div>
+                            <br>
+                            <div>To sum up, <i>"proximity"</i>  means that a high weight makes the nodes closer together; e.g. they interact 
+                                a lot, the edge has a high capacity. <i>"“Distance”</i> means that a high weight makes the nodes 
+                                further apart; e.g. it’s harder or costly to make the nodes interact. </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="main-footer"> 
+                <div class="container">
+                    <nav class="footer-nav"> 
+                        <ul>
+                            <li> <a href="about.html"> About </a></li>
+                            <li> <a href="learnmore.html"> Learn More </a></li>
+                        </ul>
+                    </nav>
+                    <nav class="footer-nav"> 
+                        <ul>
+                            <li> 
+                                <a href="https://www.linkedin.com/in/marie-haahr/" class="social-link">
+                                    <img src="../images/linkedin2.png" height="30" width="30">
+                                    Linkedin
+                                </a>
+                            </li>
+                    </nav>
+                </div>
+            </footer>
+        <script>
+            // JavaScript to add the 'visible' class after the website has loaded
+            document.addEventListener("DOMContentLoaded", function () {
+                var pageWrapper = document.querySelector(".website-wrapper");
+                pageWrapper.classList.add("visible");
+            });
+        </script>
+    </body>
+</html>
