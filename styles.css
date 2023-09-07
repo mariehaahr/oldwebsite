@@ -29,11 +29,14 @@ body {
 
 .frontpage-text{
     font-family: 'Arimo', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 .frontpage-title {
     font-weight: 500;
     font-family: 'Arimo', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.8em;
     margin-bottom: 1rem;
     margin-top: 0;
@@ -43,6 +46,7 @@ body {
 .frontpage-subtitle {
     font-weight: bold;
     font-family: 'Arimo', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.4em;
     margin-bottom: 5px;
     margin-top: 0;
@@ -53,6 +57,7 @@ body {
 .frontpage-subsubtitle {
     font-weight: bold;
     font-family: 'Arimo', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.2em;
     margin-bottom: 5px;
     margin-top: 10px;
@@ -62,6 +67,7 @@ body {
 .frontpage-subsubsubtitle {
     font-weight: bold;
     font-family: 'Arimo', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.1em;
     margin-bottom: 5px;
     margin-top: 10px;
